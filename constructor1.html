@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Sol Ring</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/adaptive.css">
+    <link rel="stylesheet" href="/font/stylesheet.css">
+    <link rel="icon" href="/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--  fonts  -->
+    <style>
+        .swiper-button-next-sample,.swiper-button-prev-sample{
+            background-image: url("/img/arr-slider.svg");
+        }
+        .swiper-button-next2,.swiper-button-prev2{
+            background-image: url("/img/arrow-forward.svg");
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-container">
+            <div class="header-container-left">
+                <a href="#!">
+                    <img src="/img/logo-qr.svg" alt="">
+                </a>
+                <ul>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                О нас
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.35932 6.71967C4.65221 6.42678 5.12709 6.42678 5.41998 6.71967L9.38965 10.6893L13.3593 6.71967C13.6522 6.42678 14.1271 6.42678 14.42 6.71967C14.7129 7.01256 14.7129 7.48744 14.42 7.78033L9.91998 12.2803C9.62709 12.5732 9.15221 12.5732 8.85932 12.2803L4.35932 7.78033C4.06643 7.48744 4.06643 7.01256 4.35932 6.71967Z" fill="#111827"/>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                Магазин
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.35932 6.71967C4.65221 6.42678 5.12709 6.42678 5.41998 6.71967L9.38965 10.6893L13.3593 6.71967C13.6522 6.42678 14.1271 6.42678 14.42 6.71967C14.7129 7.01256 14.7129 7.48744 14.42 7.78033L9.91998 12.2803C9.62709 12.5732 9.15221 12.5732 8.85932 12.2803L4.35932 7.78033C4.06643 7.48744 4.06643 7.01256 4.35932 6.71967Z" fill="#111827"/>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                Корпоративным клиентам
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.35932 6.71967C4.65221 6.42678 5.12709 6.42678 5.41998 6.71967L9.38965 10.6893L13.3593 6.71967C13.6522 6.42678 14.1271 6.42678 14.42 6.71967C14.7129 7.01256 14.7129 7.48744 14.42 7.78033L9.91998 12.2803C9.62709 12.5732 9.15221 12.5732 8.85932 12.2803L4.35932 7.78033C4.06643 7.48744 4.06643 7.01256 4.35932 6.71967Z" fill="#111827"/>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">Поддержка</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="header-btn" type="button">Задать нам впорос</button>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span class="span-burger"></span>
+                </label>
+                <ul class="menu__box">
+                    <li class="content-burger">
+                        <ul class="list-header">
+                            <li>
+                                <a href="/#news">
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/calendar/">
+                                    БЛОГ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/events/">
+                                    КОНТАКТЫ
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="section__constructor1">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="">
+                Главная
+            </a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M8 14L12 10L8 6" stroke="#374151" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>
+                Конструктор сайтов
+            </p>
+        </div>
+        <h1 class="section-title__constructor1">
+            Выберите шаблон дизайна
+        </h1>
+        <div class="section-container__constructor1">
+            <div class="section-container-block__constructor1">
+                <div class="section-container-block-img__constructor1">
+                    <div class="section-container-block-img-part__constructor1">
+                        <img src="/img/iPhone X.png" alt="">
+                        <div class="section-container-block-img-color__constructor1" style="background: #92E3A9;"></div>
+                    </div>
+                </div>
+                <div class="section-container-block-text__constructor1">
+                    <h3>Название шаблона</h3>
+                    <p>
+                        Integrations with over 5000 of the most commonly used apps, including productivity software, messaging tools, CRM systems and popular learning ets.
+                    </p>
+                    <a href="">
+                        Выбрать
+                    </a>
+                </div>
+            </div>
+            <div class="section-container-block__constructor1">
+                <div class="section-container-block-img__constructor1">
+                    <div class="section-container-block-img-part__constructor1">
+                        <img src="/img/iPhone X.png" alt="">
+                        <div class="section-container-block-img-color__constructor1" style="background: #5EC3C5;"></div>
+                    </div>
+                </div>
+                <div class="section-container-block-text__constructor1">
+                    <h3>Название шаблона</h3>
+                    <p>
+                        Integrations with over 5000 of the most commonly used apps, including productivity software, messaging tools, CRM systems and popular learning ets.
+                    </p>
+                    <a href="">
+                        Выбрать
+                    </a>
+                </div>
+            </div>
+            <div class="section-container-block__constructor1">
+                <div class="section-container-block-img__constructor1">
+                    <div class="section-container-block-img-part__constructor1">
+                        <img src="/img/iPhone X.png" alt="">
+                        <div class="section-container-block-img-color__constructor1" style="background: #263238;"></div>
+                    </div>
+                </div>
+                <div class="section-container-block-text__constructor1">
+                    <h3>Название шаблона</h3>
+                    <p>
+                        Integrations with over 5000 of the most commonly used apps, including productivity software, messaging tools, CRM systems and popular learning ets.
+                    </p>
+                    <a href="">
+                        Выбрать
+                    </a>
+                </div>
+            </div>
+            <div class="section-container-block__constructor1">
+                <div class="section-container-block-img__constructor1">
+                    <div class="section-container-block-img-part__constructor1">
+                        <img src="/img/iPhone X.png" alt="">
+                        <div class="section-container-block-img-color__constructor1" style="background: #7F8596;"></div>
+                    </div>
+                </div>
+                <div class="section-container-block-text__constructor1">
+                    <h3>Название шаблона</h3>
+                    <p>
+                        Integrations with over 5000 of the most commonly used apps, including productivity software, messaging tools, CRM systems and popular learning ets.
+                    </p>
+                    <a href="">
+                        Выбрать
+                    </a>
+                </div>
+            </div>
+            <div class="section-container-block__constructor1">
+                <div class="section-container-block-img__constructor1">
+                    <div class="section-container-block-img-part__constructor1">
+                        <img src="/img/iPhone X.png" alt="">
+                        <div class="section-container-block-img-color__constructor1" style="background: #FFFFFF;"></div>
+                    </div>
+                </div>
+                <div class="section-container-block-text__constructor1">
+                    <h3>Название шаблона</h3>
+                    <p>
+                        Integrations with over 5000 of the most commonly used apps, including productivity software, messaging tools, CRM systems and popular learning ets.
+                    </p>
+                    <a href="">
+                        Выбрать
+                    </a>
+                </div>
+            </div>
+            <div class="section-container-block__constructor1">
+                <div class="section-container-block-img__constructor1">
+                    <div class="section-container-block-img-part__constructor1">
+                        <img src="/img/iPhone X.png" alt="">
+                        <div class="section-container-block-img-color__constructor1" style="background: #446FC3;"></div>
+                    </div>
+                </div>
+                <div class="section-container-block-text__constructor1">
+                    <h3>Название шаблона</h3>
+                    <p>
+                        Integrations with over 5000 of the most commonly used apps, including productivity software, messaging tools, CRM systems and popular learning ets.
+                    </p>
+                    <a href="">
+                        Выбрать
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="footer-container">
+            <div class="footer-container-logo">
+                <img src="/img/logo-qr.svg" alt="">
+            </div>
+            <div class="footer-container-block">
+                <h3>Column One</h3>
+                <ul>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-container-block">
+                <h3>Column One</h3>
+                <ul>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-container-block">
+                <h3>Column One</h3>
+                <ul>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-container-block">
+                <h3>Column One</h3>
+                <ul>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-container-block">
+                <h3>Column One</h3>
+                <ul>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Link One
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-container-bottom">
+            <div class="footer-container-bottom-left">
+                <p>
+                    © 2023 Relume. All rights reserved.
+                </p>
+                <a href="">
+                    Privacy Policy
+                </a>
+                <a href="">
+                    Terms of Service
+                </a>
+                <a href="">
+                    <img src="/img/Vector.svg" alt="">
+                    dragotech.info
+                </a>
+            </div>
+            <div class="footer-social">
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+                        <rect x="0.686035" width="24.6628" height="25" rx="12.3314" fill="#5EC3C5"/>
+                        <path d="M13.0173 7.37952C14.6515 7.37952 14.8744 7.37952 15.543 7.37952C16.1372 7.37952 16.4344 7.53012 16.6572 7.60542C16.9544 7.75602 17.1772 7.83133 17.4001 8.05723C17.623 8.28313 17.7715 8.50904 17.8458 8.81024C17.9201 9.03615 17.9944 9.33735 18.0687 9.93976C18.0687 10.6175 18.0687 10.7681 18.0687 12.5C18.0687 14.2319 18.0687 14.3825 18.0687 15.0602C18.0687 15.6627 17.9201 15.9639 17.8458 16.1898C17.6972 16.491 17.623 16.7169 17.4001 16.9428C17.1772 17.1687 16.9544 17.3193 16.6572 17.3946C16.4344 17.4699 16.1372 17.5452 15.543 17.6205C14.8744 17.6205 14.7258 17.6205 13.0173 17.6205C11.3087 17.6205 11.1601 17.6205 10.4916 17.6205C9.89727 17.6205 9.60012 17.4699 9.37727 17.3946C9.08013 17.244 8.85727 17.1687 8.63441 16.9428C8.41156 16.7169 8.26299 16.491 8.1887 16.1898C8.11442 15.9639 8.04013 15.6627 7.96584 15.0602C7.96584 14.3825 7.96584 14.2319 7.96584 12.5C7.96584 10.7681 7.96584 10.6175 7.96584 9.93976C7.96584 9.33735 8.11442 9.03615 8.1887 8.81024C8.33727 8.50904 8.41156 8.28313 8.63441 8.05723C8.85727 7.83133 9.08013 7.68072 9.37727 7.60542C9.60012 7.53012 9.89727 7.45482 10.4916 7.37952C11.1601 7.37952 11.383 7.37952 13.0173 7.37952ZM13.0173 6.25C11.3087 6.25 11.1601 6.25 10.4916 6.25C9.82298 6.25 9.37727 6.4006 9.00584 6.55121C8.63441 6.70181 8.26299 6.92771 7.89156 7.30422C7.52013 7.68072 7.37156 7.98193 7.1487 8.43374C7.00013 8.81024 6.92585 9.26205 6.85156 9.93976C6.85156 10.6175 6.85156 10.8434 6.85156 12.5C6.85156 14.2319 6.85156 14.3825 6.85156 15.0602C6.85156 15.738 7.00013 16.1898 7.1487 16.5663C7.29728 16.9428 7.52013 17.3193 7.89156 17.6958C8.26299 18.0723 8.56013 18.2229 9.00584 18.4488C9.37727 18.5994 9.82298 18.6747 10.4916 18.75C11.1601 18.75 11.383 18.75 13.0173 18.75C14.6515 18.75 14.8744 18.75 15.543 18.75C16.2115 18.75 16.6572 18.5994 17.0287 18.4488C17.4001 18.2982 17.7715 18.0723 18.143 17.6958C18.5144 17.3193 18.663 17.0181 18.8858 16.5663C19.0344 16.1898 19.1087 15.738 19.1829 15.0602C19.1829 14.3825 19.1829 14.1566 19.1829 12.5C19.1829 10.8434 19.1829 10.6175 19.1829 9.93976C19.1829 9.26205 19.0344 8.81024 18.8858 8.43374C18.7372 8.05723 18.5144 7.68072 18.143 7.30422C17.7715 6.92771 17.4744 6.77711 17.0287 6.55121C16.6572 6.4006 16.2115 6.3253 15.543 6.25C14.8744 6.25 14.7258 6.25 13.0173 6.25Z" fill="white"/>
+                        <path d="M13.0173 9.26205C11.2344 9.26205 9.82298 10.6928 9.82298 12.5C9.82298 14.3072 11.2344 15.738 13.0173 15.738C14.8001 15.738 16.2115 14.3072 16.2115 12.5C16.2115 10.6928 14.8001 9.26205 13.0173 9.26205ZM13.0173 14.6084C11.903 14.6084 10.9373 13.7048 10.9373 12.5C10.9373 11.3705 11.8287 10.3916 13.0173 10.3916C14.1315 10.3916 15.0972 11.2952 15.0972 12.5C15.0972 13.6295 14.1315 14.6084 13.0173 14.6084Z" fill="white"/>
+                        <path d="M16.2858 9.93976C16.6961 9.93976 17.0287 9.60262 17.0287 9.18675C17.0287 8.77087 16.6961 8.43374 16.2858 8.43374C15.8755 8.43374 15.543 8.77087 15.543 9.18675C15.543 9.60262 15.8755 9.93976 16.2858 9.93976Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+                        <rect x="0.348633" width="24.6628" height="25" rx="12.3314" fill="#5EC3C5"/>
+                        <path d="M19.2156 9.3125C18.784 9.5 18.2908 9.625 17.7975 9.6875C18.2908 9.375 18.7224 8.875 18.9073 8.3125C18.4141 8.625 17.9208 8.8125 17.3043 8.9375C16.8727 8.4375 16.1944 8.125 15.5162 8.125C14.1597 8.125 13.0499 9.25 13.0499 10.625C13.0499 10.8125 13.0499 11 13.1116 11.1875C11.0769 11.0625 9.22719 10.0625 7.99405 8.5625C7.80908 8.9375 7.68577 9.375 7.68577 9.8125C7.68577 10.6875 8.11737 11.4375 8.79559 11.875C8.364 11.875 7.99405 11.75 7.68577 11.5625C7.68577 12.75 8.54896 13.8125 9.65879 14C9.47382 14.0625 9.22719 14.0625 8.98057 14.0625C8.7956 14.0625 8.67228 14.0625 8.48731 14C8.79559 15 9.72045 15.75 10.8303 15.75C9.96708 16.4375 8.91891 16.8125 7.74743 16.8125C7.56246 16.8125 7.37749 16.8125 7.13086 16.75C8.24068 17.4375 9.53548 17.875 10.9536 17.875C15.5162 17.875 17.9825 14.0625 17.9825 10.75V10.4375C18.4757 10.25 18.9073 9.8125 19.2156 9.3125Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                        <rect x="0.0117188" width="24.6628" height="25" rx="12.3314" fill="#5EC3C5"/>
+                        <path d="M12.9491 16.875C8.31461 16.875 5.67118 13.5905 5.56104 8.125H7.88251C7.95876 12.1365 9.67021 13.8357 11.0258 14.1861V8.125H13.2117V11.5847C14.5504 11.4358 15.9568 9.85923 16.4313 8.125H18.6172C18.4384 9.02442 18.082 9.87603 17.5703 10.6266C17.0586 11.3771 16.4026 12.0104 15.6433 12.4869C16.4909 12.9222 17.2395 13.5384 17.8397 14.2948C18.44 15.0512 18.8782 15.9306 19.1256 16.875H16.7194C16.4973 16.0548 16.046 15.3205 15.4221 14.7643C14.7981 14.208 14.0292 13.8545 13.2117 13.7481V16.875H12.9491V16.875Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+                        <rect x="0.674316" width="24.6628" height="25" rx="12.3314" fill="#5EC3C5"/>
+                        <path d="M14.0273 12.728H16.3223L16.6826 10.3503H14.0268V9.05084C14.0268 8.06312 14.3433 7.18726 15.2492 7.18726H16.705V5.11234C16.4492 5.07711 15.9083 5 14.8861 5C12.7517 5 11.5003 6.14956 11.5003 8.76856V10.3503H9.30615V12.728H11.5003V19.2631C11.9349 19.3298 12.375 19.375 12.8268 19.375C13.2352 19.375 13.6338 19.3369 14.0273 19.2827V12.728Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                        <rect x="0.336914" width="24.6628" height="25" rx="12.3314" fill="#5EC3C5"/>
+                        <path d="M17.601 7.87639L15.748 17.6827C15.748 17.6827 15.4887 18.3626 14.7765 18.0365L10.501 14.5954L10.4812 14.5852C11.0587 14.0409 15.537 9.81416 15.7327 9.62258C16.0357 9.32585 15.8476 9.14921 15.4958 9.37335L8.88078 13.7831L6.3287 12.8817C6.3287 12.8817 5.92708 12.7318 5.88845 12.4057C5.8493 12.0791 6.34192 11.9024 6.34192 11.9024L16.7459 7.61809C16.7459 7.61809 17.601 7.22371 17.601 7.87639V7.87639Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
